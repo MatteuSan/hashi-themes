@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>はるがきた！ - Explore Springtime in Japan</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<header class="w-full d-flex flow-col @md:flow-row justify-between items-center px-xl py-lg bg-surface-300 shadow-low">
+    <a href="./">
+        <h2 class="size-title weight-bold">はるがきた！</h2>
+    </a>
+</header>
+
+<section class="haru-hero d-flex flow-col justify-center items-center w-full p-lg">
+    <h1 class="haru-hero__hook supertitle @md:bg-accent-600 px-xs text-surface-400 mb-sm">Let's learn about spring&shy;time in Japan!</h1>
+    <a href="#main-content" class="hs-button is-filled is-raised">
+        <span class="hs-button__label">いこう！</span>
+    </a>
+</section>
+
+<main class="content-wrap" id="main-content">
+    <h1 class="title text-align-center mb-sm">はるがきた！</h1>
+    <p><b>「はるがきた！」</b> is a special news letter from the まるまる news company. Sign up in the form below to receive weekly newsletters about springtime in Japan! The newsletter will last until May (when spring ends in Japan).</p>
+    <section class="d-grid cols-1 @md:cols-2 @lg:cols-3 gap-md my-md">
+        <div class="hs-card is-filled">
+            <header class="hs-card__header">
+                <div class="hs-card__mast">
+                    <h2 class="hs-card__title">Learn the lingo</h2>
+                </div>
+            </header>
+            <main class="hs-card__content">
+                Get an opportunity to learn the springtime Japanese words!
+            </main>
+        </div>
+        <div class="hs-card is-filled">
+            <header class="hs-card__header">
+                <div class="hs-card__mast">
+                    <h2 class="hs-card__title">Learn the culture</h2>
+                </div>
+            </header>
+            <main class="hs-card__content">
+                Get a chance to learn the springtime culture!
+            </main>
+        </div>
+        <div class="hs-card is-filled">
+            <header class="hs-card__header">
+                <div class="hs-card__mast">
+                    <h2 class="hs-card__title">Learn the people</h2>
+                </div>
+            </header>
+            <main class="hs-card__content">
+                Get a chance to meet the notable people during springtime!
+            </main>
+        </div>
+    </section>
+    <form class="mt-sm bg-surface-400 p-lg r-md shadow-low" action="" method="post">
+        <label class="hs-form-field is-filled is-required">
+            <span class="hs-form-field__label">Name</span>
+            <input class="hs-form-field__input" type="text" placeholder="John Doe" required/>
+        </label>
+        <label class="hs-form-field is-filled is-required">
+            <span class="hs-form-field__label">E-mail</span>
+            <input class="hs-form-field__input" type="text" placeholder="john.doe@email.com" required/>
+        </label>
+
+        <label class="hs-select-field is-filled is-required">
+            <span class="hs-select-field__label">Newsletter Theme</span>
+            <select class="hs-select-field__input">
+                <option>Meccha Pinku</option>
+                <option>Sakura</option>
+                <option>Ume</option>
+            </select>
+            <span class="hs-select-field__helper">This will personalize your newsletter look</span>
+        </label>
+
+        <div class="mt-md d-flex flow-col items-end">
+            <button class="hs-button is-filled is-raised" type="submit">
+                <span class="hs-button__label">Submit</span>
+            </button>
+            <p class="small mt-sm">(The form doesn't have any logic, any information you enter will never be sent.)</p>
+        </div>
+    </form>
+</main>
+<footer class="mt-md p-lg text-align-center bg-surface-300">
+    <p>Build with &hearts; & <a class="hs-link" href="https://github.com/dev-protocol/hashi-web">Hashi</a></p>
+    <p class="small">Theme: Haru</p>
+    <p class="small">Disclaimer; some parts of this may have not been well thought out, I'm sorry.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+$main-theme: (
+  'accent': 'hana',
+  'accent-dark': 'hana',
+  'surface': 'ume',
+  'extend': (
+    'ume': (
+      200: #f8dacb,
+      300: #ffd0b4,
+      400: #ffc09c,
+      600: #c88762,
+      'ink': #3c1f11
+    ),
+    'hana': (
+      200: #ffb8d7,
+      300: #ff77a9,
+      400: #ec407a,
+      600: #b4004e,
+      'ink': #ffffff
+    ),
+    'size': (
+      'button': 18px
+    )
+  ),
+);
+
+$button-theme: (
+  'fill-active': 'accent-300',
+  'padding': ('md', 'lg'),
+  'radius': 'pill',
+  'size': 'button'
+);
+
+$card-theme: (
+  'fill': 'dp-white-200',
+  'ink': 'dp-white-ink'
+);
+
+$profile-theme: (
+  'fill': 'dp-white-200',
+  'ink': 'dp-white-ink'
+);
+
+$form-field-theme: (
+  'fill': 'dp-white-200',
+  'ink': 'dp-white-ink'
+);
+
+
+$select-field-theme: (
+  'fill': 'dp-white-200',
+  'ink': 'dp-white-ink'
+);
+
+$link-theme: (
+  'ink': 'ume-ink'
+);

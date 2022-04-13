@@ -1,0 +1,62 @@
+@use '../theme' as haru;
+
+@use 'node_modules/@devprotocol/hashi' with (
+  $theme: haru.$main-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-button' with (
+  $theme: haru.$button-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-card' with (
+  $theme: haru.$card-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-form-field' with (
+  $theme: haru.$form-field-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-profile' with (
+  $theme: haru.$profile-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-select-field' with (
+  $theme: haru.$select-field-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-link' with (
+  $theme: haru.$link-theme
+);
+@use 'node_modules/@devprotocol/hashi/hs-utils';
+
+@include hashi.init {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @include hs-button.render();
+  @include hs-card.render();
+  @include hs-form-field.render();
+  @include hs-profile.render();
+  @include hs-select-field.render();
+  @include hs-link.render();
+  
+  @include hs-utils.layout-utils();
+  @include hs-utils.color-utils();
+  @include hs-utils.shape-utils();
+  @include hs-utils.typography-utils();
+  
+  .haru-hero {
+    min-height: 55vh;
+    background-image: url('../img/haru-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .haru-hero__hook {
+      transform: rotate(-1deg);
+      text-shadow: 3px 3px hashi.token-get('surface-ink');
+    }
+  }
+  
+  .content-wrap {
+    width: calc(100% - 30px);
+    max-width: 1077px;
+    padding: 25px 0 45px;
+    margin: 0 auto;
+  }
+}
