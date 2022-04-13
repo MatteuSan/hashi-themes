@@ -1,11 +1,8 @@
 {
-  "name": "hashi-haru-theme",
+  "name": "@matteusan/hashi-haru",
   "version": "0.1.0",
   "description": "A theme for Dev Protocol's Hashi based on the spring season",
   "main": "index.js",
-  "scripts": {
-    "build": "gulp"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatteuSan/hashi-themes.git"
@@ -24,12 +21,5 @@
   "bugs": {
     "url": "https://github.com/MatteuSan/hashi-themes/issues"
   },
-  "homepage": "https://github.com/MatteuSan/hashi-themes#readme",
-  "devDependencies": {
-    "@devprotocol/hashi": "1.0.1",
-    "gulp": "4.0.2",
-    "gulp-purgecss": "4.1.3",
-    "gulp-sass": "5.1.0",
-    "sass": "1.50.0"
-  }
+  "homepage": "https://github.com/MatteuSan/hashi-themes#readme"
 }
