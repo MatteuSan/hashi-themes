@@ -294,6 +294,14 @@ small {
   line-height: var(--hs-theme-line-height-small);
 }
 
+code,
+code * {
+  font-family: var(--hs-theme-family-mono);
+  font-size: var(--hs-theme-size-mono);
+  font-weight: var(--hs-theme-weight-mono);
+  line-height: var(--hs-theme-line-height-mono);
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -649,6 +657,14 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.bg-primary-600 {
+  background: var(--hs-theme-primary-600);
+  color: var(--hs-theme-primary-ink);
+}
+.bg-accent-400 {
+  background: var(--hs-theme-accent-400);
+  color: var(--hs-theme-accent-ink);
+}
 @media (min-width: 640px) {
   .\@md\:bg-accent-600 {
     background: var(--hs-theme-accent-600);
@@ -686,6 +702,9 @@ html {
 .py-lg {
   padding-top: var(--hs-theme-padding-lg);
   padding-bottom: var(--hs-theme-padding-lg);
+}
+.p-xl {
+  padding: var(--hs-theme-padding-xl);
 }
 .px-xl {
   padding-left: var(--hs-theme-padding-xl);
